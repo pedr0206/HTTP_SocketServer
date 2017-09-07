@@ -35,6 +35,8 @@ namespace HTTP_SocketServer
                         switch (request)
                         {
                             case "GET /date HTTP/1.1":
+                                string date = DateTime.Now.ToString("HH: mm:ss");
+                                sw.WriteLine(date);
                                 break;
                         }
                     }
